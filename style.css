@@ -1,0 +1,128 @@
+/* ---------- RESETE DE BAZĂ ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f6f3ef;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #d7b56d;
+}
+
+/* ---------- CONȚINUT PRINCIPAL ---------- */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+/* ---------- LISTĂ PRODUSE ---------- */
+.produse {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.produs {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produs:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.produs img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.produs h3 {
+  font-size: 1.1em;
+  margin-top: 15px;
+  color: #333;
+}
+
+.produs p {
+  margin-top: 5px;
+  color: #555;
+}
+
+.detalii {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #111;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.detalii:hover {
+  background-color: #d7b56d;
+  color: #111;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9em;
+  margin-top: 40px;
+}

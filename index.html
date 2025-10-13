@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HunterShop</title>
+    <title>KendamaShop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>HunterShop</h1>
+    <header>
+      <h1><a href="index.html">KendamaShop</a></h1>
+      <nav>
+        <a href="cart.html">Coș</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Produsele noastre</h2>
+      <div class="produse">
+        <!-- PRODUS 1 -->
+        <div class="produs">
+          <a href="details.html?id=1">
+            <img
+              src="https://zenino.ro/cdn/shop/files/Untitled_design_22_66bf004e-28b0-4533-b62c-08cccd9357e9.png?v=1759823093&width=1125"
+              alt="Kendama 1"
+            />
+          </a>
+          <h3>Kendama Model 1</h3>
+          <p><strong>Preț: 120 lei</strong></p>
+          <a class="detalii" href="details.html?id=1">Detalii</a>
+        </div>
+
+        <!-- PRODUS 2 -->
+        <div class="produs">
+          <a href="details.html?id=2">
+            <img
+              src="https://kendamashop.ro/wp-content/uploads/2025/10/IMG-20251002-WA0004-600x600.jpg"
+              alt="Kendama Model 2"
+            />
+          </a>
+          <h3>Kendama Model 2</h3>
+          <p><strong>Preț: 150 lei</strong></p>
+          <a class="detalii" href="details.html?id=2">Detalii</a>
+        </div>
+
+        <!-- PRODUS 3 -->
+        <div class="produs">
+          <a href="details.html?id=3">
+            <img
+              src="https://kendamashop.ro/wp-content/uploads/2018/06/1-8-600x600.png"
+              alt="Kendama Model 3"
+            />
+          </a>
+          <h3>Kendama Model 3</h3>
+          <p><strong>Preț: 135 lei</strong></p>
+          <a class="detalii" href="details.html?id=3">Detalii</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 KendamaShop</p>
+    </footer>
   </body>
 </html>
